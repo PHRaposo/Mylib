@@ -1,0 +1,25 @@
+(:om-lib
+
+(:version 0.1 )
+
+(:doc "TEMPLATE TO HELP USERS TO CREATE HIS OWN LIBRARY") 
+
+(:author "Paulo Henrique Raposo-2021")
+
+(:source-files "sources/package"
+	       "sources/mylib-functions")
+
+ (:symbols 
+      (:packages
+            (:package
+		 (:name "FOLDER1")
+			 (:functions
+ 				"mylib::MY-FUNCTION1"))
+            (:package
+		 (:name "FOLDER2")
+			 (:functions
+ 				"mylib::MY-FUNCTION2"))
+
+      )
+ )
+)

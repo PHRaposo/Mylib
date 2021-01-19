@@ -1,0 +1,315 @@
+
+(:patch
+ (:name "new-function-from-patch")
+ (:doc "")
+ (:info
+  (:created "2021/01/16 9:19:01")
+  (:modified "2021/01/19 0:23:59")
+  (:by "om-sharp")
+  (:version 1.0200009))
+ (:window (:size (911 543)) (:position (328 95)))
+ (:grid nil)
+ (:lock nil)
+ (:boxes
+  (:box
+   (:type :value)
+   (:reference cons)
+   (:group-id nil)
+   (:name "value box")
+   (:x 67)
+   (:y 16)
+   (:w 84)
+   (:h 29)
+   (:color
+    (:color-or-nil (:color (:color 1.0 1.0 1.0 1.0)) (:t-or-nil t)))
+   (:border nil)
+   (:roundness nil)
+   (:text-font nil)
+   (:align nil)
+   (:lock nil)
+   (:inputs)
+   (:outputs (:output (:name "value") (:reactive nil)))
+   (:value (:list 0 1 2 3 4 5))
+   (:id 0))
+  (:box
+   (:type :function)
+   (:reference rotate)
+   (:group-id nil)
+   (:name "rotate")
+   (:x 640/7)
+   (:y 1823/7)
+   (:w 70)
+   (:h 29)
+   (:color nil)
+   (:border nil)
+   (:roundness nil)
+   (:text-font nil)
+   (:align nil)
+   (:icon :left)
+   (:lock nil)
+   (:lambda :lambda)
+   (:inputs
+    (:input
+     (:type :standard)
+     (:name "LIST")
+     (:value nil)
+     (:reactive nil))
+    (:input
+     (:type :optional)
+     (:name "nth")
+     (:value 1)
+     (:reactive nil)))
+   (:outputs (:output (:name "out") (:reactive nil)))
+   (:id 1))
+  (:box
+   (:type :function)
+   (:reference length)
+   (:group-id nil)
+   (:name "length")
+   (:x 1375/7)
+   (:y 941/7)
+   (:w 72)
+   (:h 29)
+   (:color nil)
+   (:border nil)
+   (:roundness nil)
+   (:text-font nil)
+   (:align nil)
+   (:icon :left)
+   (:lock nil)
+   (:lambda nil)
+   (:inputs
+    (:input
+     (:type :standard)
+     (:name "SEQUENCE")
+     (:value nil)
+     (:reactive nil)))
+   (:outputs (:output (:name "out") (:reactive nil)))
+   (:id 2))
+  (:box
+   (:type :function)
+   (:reference 1-)
+   (:group-id nil)
+   (:name "1-")
+   (:x 1669/7)
+   (:y 1270/7)
+   (:w 51)
+   (:h 29)
+   (:color nil)
+   (:border nil)
+   (:roundness nil)
+   (:text-font nil)
+   (:align nil)
+   (:icon :left)
+   (:lock nil)
+   (:lambda nil)
+   (:inputs
+    (:input
+     (:type :standard)
+     (:name "X")
+     (:value nil)
+     (:reactive nil)))
+   (:outputs (:output (:name "out") (:reactive nil)))
+   (:id 3))
+  (:box
+   (:type :function)
+   (:reference arithm-ser)
+   (:group-id nil)
+   (:name "arithm-ser")
+   (:x 1501/7)
+   (:y 1963/7)
+   (:w 96)
+   (:h 29)
+   (:color nil)
+   (:border nil)
+   (:roundness nil)
+   (:text-font nil)
+   (:align nil)
+   (:icon :left)
+   (:lock nil)
+   (:lambda nil)
+   (:inputs
+    (:input
+     (:type :standard)
+     (:name "BEGIN")
+     (:value 0)
+     (:reactive nil))
+    (:input
+     (:type :standard)
+     (:name "END")
+     (:value 10)
+     (:reactive nil))
+    (:input
+     (:type :standard)
+     (:name "STEP")
+     (:value 1)
+     (:reactive nil)))
+   (:outputs (:output (:name "out") (:reactive nil)))
+   (:id 4))
+  (:box
+   (:type :value)
+   (:reference fixnum)
+   (:group-id nil)
+   (:name "value box")
+   (:x 1515/7)
+   (:y 1718/7)
+   (:w 32)
+   (:h 29)
+   (:color
+    (:color-or-nil (:color (:color 1.0 1.0 1.0 1.0)) (:t-or-nil t)))
+   (:border nil)
+   (:roundness nil)
+   (:text-font nil)
+   (:align nil)
+   (:lock nil)
+   (:inputs)
+   (:outputs (:output (:name "value") (:reactive nil)))
+   (:value 0)
+   (:id 5))
+  (:box
+   (:type :value)
+   (:reference fixnum)
+   (:group-id nil)
+   (:name "value box")
+   (:x 1865/7)
+   (:y 1718/7)
+   (:w 32)
+   (:h 29)
+   (:color
+    (:color-or-nil (:color (:color 1.0 1.0 1.0 1.0)) (:t-or-nil t)))
+   (:border nil)
+   (:roundness nil)
+   (:text-font nil)
+   (:align nil)
+   (:lock nil)
+   (:inputs)
+   (:outputs (:output (:name "value") (:reactive nil)))
+   (:value 1)
+   (:id 6))
+  (:box
+   (:type :function)
+   (:reference mapcar)
+   (:group-id nil)
+   (:name "mapcar")
+   (:x 990/7)
+   (:y 2278/7)
+   (:w 77)
+   (:h 29)
+   (:color nil)
+   (:border nil)
+   (:roundness nil)
+   (:text-font nil)
+   (:align nil)
+   (:icon :left)
+   (:lock nil)
+   (:lambda nil)
+   (:inputs
+    (:input
+     (:type :standard)
+     (:name "FUNCTION")
+     (:value nil)
+     (:reactive nil))
+    (:input
+     (:type :standard)
+     (:name "LIST")
+     (:value nil)
+     (:reactive nil)))
+   (:outputs (:output (:name "out") (:reactive nil)))
+   (:id 7))
+  (:box
+   (:type :abstraction)
+   (:reference
+    (:textfun
+     (:name "ALL-ROTATIONS")
+     (:doc "")
+     (:info
+      (:created nil)
+      (:modified nil)
+      (:by *app-name*)
+      (:version 0))
+     (:window (:size (773 524)) (:position (555 136)))
+     (:text
+      (:list
+       ";;; all-rotations ;;; "
+       "(lambda (list) "
+       "(mapcar"
+       " #'(lambda (input1)"
+       "    (rotate list input1)) "
+       "  (arithm-ser 0 (1- (length list)) 1)))"
+       ""
+       "#|"
+       ""
+       "code for a new function"
+       ""
+       ";;; LISP ;;;"
+       ""
+       "(defun all-rot (list) "
+       "(mapcar"
+       " #'(lambda (input1)"
+       "    (rotate list input1)) "
+       "  (arithm-ser 0 (1- (length list)) 1)))"
+       ""
+       ";;; OM-INTERFACE ;;;"
+       ""
+       "(om::defmethod! all-rotations ((num-list list))"
+       "        :initvals '( (0 1 2 3 4 5) )"
+       "	:indoc '(\"number list\") "
+       "	:icon 01"
+       "	:doc \"Returns all rotations of a list.\""
+       "(all-rot num-list))"
+       ""
+       "|#"))))
+   (:group-id nil)
+   (:name "ALL-ROTATIONS")
+   (:x 453)
+   (:y 132)
+   (:w 126)
+   (:h 60)
+   (:color nil)
+   (:border nil)
+   (:roundness nil)
+   (:text-font nil)
+   (:align :center)
+   (:display :hidden)
+   (:lock nil)
+   (:lambda nil)
+   (:pre-delay 0)
+   (:inputs
+    (:input
+     (:type :standard)
+     (:name "LIST")
+     (:value nil)
+     (:reactive nil)))
+   (:outputs (:output (:name "out") (:reactive nil)))
+   (:id 8))
+  (:comment
+   (:x 134)
+   (:y 370)
+   (:w 191)
+   (:h 53)
+   (:fgcolor nil)
+   (:bgcolor nil)
+   (:border nil)
+   (:roundness nil)
+   (:text-font nil)
+   (:align nil)
+   (:text "SELECT EDIT ->SHOW LISP CODE AND THEN CLICK ON THE MAPCAR")
+   (:id 9)))
+ (:connections
+  (:connection
+   (:from (:box 0 :out 0))
+   (:to (:box 1 :in 0))
+   (:attributes
+    (:color (:color 0.2 0.4 0.5 1.0) :style nil :modif nil)))
+  (:connection
+   (:from (:box 0 :out 0))
+   (:to (:box 2 :in 0))
+   (:attributes
+    (:color (:color 0.2 0.4 0.5 1.0) :style nil :modif nil)))
+  (:connection (:from (:box 0 :out 0)) (:to (:box 8 :in 0)))
+  (:connection (:from (:box 1 :out 0)) (:to (:box 7 :in 0)))
+  (:connection (:from (:box 2 :out 0)) (:to (:box 3 :in 0)))
+  (:connection (:from (:box 3 :out 0)) (:to (:box 4 :in 1)))
+  (:connection (:from (:box 4 :out 0)) (:to (:box 7 :in 1)))
+  (:connection (:from (:box 5 :out 0)) (:to (:box 4 :in 0)))
+  (:connection (:from (:box 6 :out 0)) (:to (:box 4 :in 2)))))
