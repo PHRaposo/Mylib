@@ -4,7 +4,6 @@
 ;;; MYLIB IS A TEMPLATE TO HELP USERS TO CREATE HIS OWN OM LIBRARY, COMPATIBLE WITH OM#.
 ;;; BY PAULO HENRIQUE RAPOSO - 2021
 
-
 (in-package :om)
 
 (mapc 'compile&load (list
@@ -15,7 +14,7 @@
                     )
 )
 
-(fill-library '( ("FOLDER1" Nil Nil (mylib::MY-FUNCTION1) Nil)
+(fill-library '( ("FOLDER1" Nil Nil (mylib::MY-FUNCTION1 mylib::mod12) Nil)
 
                 ("FOLDER2" Nil Nil (mylib::MY-FUNCTION2) Nil)
 

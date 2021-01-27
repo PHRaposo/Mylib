@@ -14,7 +14,8 @@
             (:package
 		 (:name "FOLDER1")
 			 (:functions
- 				"mylib::MY-FUNCTION1"))
+ 				"mylib::MY-FUNCTION1"
+				"mylib::mod12"))
             (:package
 		 (:name "FOLDER2")
 			 (:functions
